@@ -1,0 +1,89 @@
+/* Общие стили */
+header {
+    background-color: #1abc9c;
+    color: white;
+    padding: 40px 20px; /* Уменьшаем padding на мобильных */
+    text-align: center;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap; /* Если ссылок много, они переносятся на новую строку */
+    justify-content: center; /* Центрируем ссылки на мобильных */
+}
+
+.link-item {
+    margin: 14px 10px; /* Уменьшаем отступы */
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
+
+.link-item:hover {
+    background: #ddd;
+    color: black;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap; /* На мобильных main и aside будут в столбик */
+}
+
+.main {
+    background-color: white;
+    padding: 15px;
+    width: 100%; /* На мобильных займет всю ширину */
+    box-sizing: border-box;
+}
+
+aside {
+    width: 100%; /* На мобильных займет всю ширину */
+    padding: 15px;
+    background-color: #f1f1f1;
+    box-sizing: border-box;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #ddd;
+}
+
+/* Адаптивные изображения */
+.personal-photo,
+.gnivc-photo,
+.english-speakingclub-photo,
+.diehard-cheboksary-photo {
+    max-width: 100%; /* Чтобы изображения не выходили за границы */
+    height: auto; /* Сохраняет пропорции */
+}
+
+.fakeimg {
+    display: flex;
+    flex-direction: column;
+    max-height: auto;
+}
+
+/* Медиа-запросы для планшетов (768px - 992px) */
+@media (min-width: 768px) {
+    .main {
+        width: 70%; /* Возвращаем исходную ширину */
+    }
+    aside {
+        width: 30%; /* Возвращаем исходную ширину */
+    }
+}
+
+/* Медиа-запросы для десктопов (992px и больше) */
+@media (min-width: 992px) {
+    header {
+        padding: 60px; /* Большие отступы на ПК */
+    }
+    nav {
+        justify-content: flex-start; /* Ссылки слева */
+    }
+    .link-item {
+        margin: 14px 20px; /* Большие отступы на ПК */
+    }
+}

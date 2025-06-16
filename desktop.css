@@ -1,0 +1,75 @@
+header{
+    background-color: #1abc9c ;
+    color: white;
+    padding: 60px;
+    text-align: center;
+}
+
+nav{
+    background-color: black;
+    display: flex;
+}
+
+.link-item{
+    margin-top: 14px;
+    margin-bottom: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.link-item:hover{
+    background: #ddd;
+    color:black;
+}
+
+main{
+    display: flex;
+}
+
+.main{
+    background-color: white;
+    padding: 20px;
+    width: 70%;
+}
+
+aside{
+    width: 30%;          
+    padding: 20px;       
+    background-color: #f1f1f1;  
+    box-sizing: border-box; 
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #ddd;
+}
+
+
+.personal-photo{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.gnivc-photo{
+    max-width: 500px;
+    max-height: 400px;
+}
+
+.fakeimg{
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
+}
+
+.english-speakingclub-photo{
+    max-width: 500px;
+    max-height: 400px;
+}
+
+.diehard-cheboksary-photo{
+    max-width: 700px;
+    max-height: 400px;
+}
